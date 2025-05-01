@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Changing Color Text</title>
+    </head>
+    <body>
+        <div id="text" style="color:black">Change Text Color Using The Button</div>
+        <button id="changeColor">Change</button>
+        <script>
+            let divClass=document.getElementById("text");
+            let buttonChange=document.getElementById("changeColor");
+            buttonChange.addEventListener("click", function(){
+                divClass.style.color="Red";
+                buttonChange.addEventListener("click", function(){
+                divClass.style.color="Blue";
+                buttonChange.addEventListener("click", function(){
+                divClass.style.color="Yellow";
+                buttonChange.addEventListener("click", function(){
+                divClass.style.color="Pink";
+                buttonChange.addEventListener("click", function(){
+                divClass.style.color="Purple";
+                buttonChange.addEventListener("click", function(){
+                divClass.style.color="Green";
+                 })
+                 })
+                 })
+                 })
+                 })
+                 })
+        </script>
+    </body>
+</html>
