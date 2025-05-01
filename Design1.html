@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <div id="divClass" style="background-color: black; height: 150px; width:150px; "></div>
+        <button id="buttonCode">Change</button>
+        <script>
+let button = document.getElementById("buttonCode");
+let divId = document.getElementById("divClass");
+button.addEventListener("click", function(){
+    divId.style.backgroundColor="Red";
+
+    button.addEventListener("click", function(){
+    divId.style.backgroundColor="Orange";
+
+    button.addEventListener("click", function(){
+    divId.style.backgroundColor="Pink";
+
+    button.addEventListener("click", function(){
+    divId.style.backgroundColor="Yellow";
+
+    button.addEventListener("click", function(){
+    divId.style.backgroundColor="Blue";
+
+})
+})
+})
+})
+ 
+});
+
+        </script>
+    </body>
+</html>
