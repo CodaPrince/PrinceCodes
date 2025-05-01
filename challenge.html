@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body>
+    <div id="display"></div>
+    <button id="buttonClick">Click Me</button>
+    <script>
+        let display=document.getElementById("display");
+        let buttonTag=document.getElementById("buttonClick");
+        let code=60;
+        buttonTag.addEventListener("click", function(){
+        if(code > 50){
+let result="You Pass";
+display.innerHTML=result;
+        }
+        else{
+            let result="You fail";
+            display.innerHTML=result;
+        }
+        })
+    </script>
+</body>
+</html>
