@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <center>
+    <div id="divName">
+       <div id="idText"><h2>Type The Correct Answer Type: Addition</h2></div>
+    <form id="myForm">
+       first number:<input type="number" name="first" id="number1"><br><br>
+       second number:<input type="number" name="second" id="number2"><br><br>
+       answer:<input type="number" name="answer" id="answer"><br><br>
+     
+    <button type="submit">Submit Me</button>
+</form>
+</div>
+</center>
+        <script>
+let myName=document.getElementById("myForm");
+myName.addEventListener("submit", function(e){
+    e.preventDefault();
+    let number1=document.getElementById("number1").value;
+    let number2=document.getElementById("number2").value;
+    let answer=document.getElementById("answer").value;
+    let convertNumber1 = Number(number1);
+    let convertNumber2 = Number(number2);
+     let result = convertNumber1 + convertNumber2;
+    
+     let convertAnswer=Number(answer);
+   // console.log(typeof(number1));
+  //  console.log(typeof(convertNumber1));
+ //   console.log(`The result it ${result}`);
+    
+   // console.log(answer);
+    //console.log(typeof(convertAnswer));
+   // console.log(result);
+   if(convertAnswer == result){
+    divName.innerHTML="you are correct";
+   }
+   else{
+    divName.innerHTML=`You are wrong the correct answer it: ${result}`;
+   }
+    
+})
+
+        </script>
+    
+</body>
+</html>
